@@ -1,0 +1,39 @@
+{
+  "name": "bowerdeps",
+  "version": "1.0.0",
+  "description": "Wraps your installed Bower dependencies into ordered bundles by filetype, to pipe into various Grunt or Gulp operations.",
+  "main": "bowerdeps",
+  "files": [
+    "bowerdeps.js"
+  ],
+  "author": {
+    "name": "Jason Eberle",
+    "email": "eberle.jason@gmail.com"
+  },
+  "repository": "jayeb/bowerdeps",
+  "license": "MIT",
+  "keywords": [
+    "bower",
+    "wiredep",
+    "imports"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jscs": "^1.8.0",
+    "reporter-plus": "git://github.com/jayeb/reporter-plus.git",
+    "time-grunt": "^1.2.1"
+  },
+  "scripts": {
+    "jshint": "jshint bowerdeps.js",
+    "jscs": "jscs bowerdeps.js"
+  },
+  "pre-commit": [
+    "jshint",
+    "jscs"
+  ],
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "wiredep": "^2.2.2"
+  }
+}
