@@ -27,6 +27,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jscs');
 
   grunt.registerTask('test', function() {
-    console.log(bowerDeps());
+    console.log(bowerDeps({
+      wiredepOptions: {
+          devDependencies: true
+        }
+    }));
   });
 };
