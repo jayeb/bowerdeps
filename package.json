@@ -1,6 +1,6 @@
 {
   "name": "bowerdeps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wraps your installed Bower dependencies into ordered bundles by filetype, to pipe into various Grunt or Gulp operations.",
   "main": "bowerdeps",
   "files": [
