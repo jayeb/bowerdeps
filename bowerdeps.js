@@ -11,7 +11,9 @@ module.exports = (function bowerDeps() {
     options = _.defaults({}, options, {
       types: ['js', 'css'],
       excludePackages: [],
-      wiredepOptions: {},
+      wiredepOptions: {
+          devDependencies: true
+        },
       force: false
     });
 

@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
-  var package = grunt.file.readJSON('package.json');
+  var package = grunt.file.readJSON('package.json'),
+      bowerDeps = require('./bowerdeps.js');
 
   require('time-grunt')(grunt);
 
@@ -24,4 +25,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jscs');
+
+  grunt.registerTask('test', function() {
+    console.log(bowerDeps());
+  });
 };
